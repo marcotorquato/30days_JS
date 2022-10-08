@@ -1,11 +1,11 @@
 body {
   min-width: 320px;
   color: #50116e;
-  background: #50116e
+  background: rgba(0, 0, 0, 0.741)
     url('https://res.cloudinary.com/justusft/image/upload/c_scale,w_1920/v1497599245/4975166968_470ce30e30_o_ujyeh7.jpg')
     no-repeat
     center
-    center;
+    center ;
   background-size: cover;
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
@@ -15,7 +15,7 @@ body {
 
 #container {
   min-height: 100vh;
-  background: rgba(0, 0, 0, 0.66);
+  background: rgba(0, 0, 0, 0.89);
 }
 
 #title {
