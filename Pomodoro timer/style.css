@@ -42,6 +42,7 @@ body {
 
 #checks > .check {
   opacity: 0.25;
+  color: #084963;
 }
 
 #phase {
@@ -96,8 +97,12 @@ input[type=text] {
   padding: 0.5em;
 }
 
+footer{
+  padding: 20px;
+}
 a {
-  color: #FFF;
+  text-decoration: none;
+  color: #084963;
 }
 
 @media screen and (max-width: 768px) {
