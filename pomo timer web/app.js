@@ -170,3 +170,9 @@ startCountdownBtn.addEventListener('click', startCountdown);
 countdownDisplay.addEventListener('click', startCountdown);
 resetCountdownBtn.addEventListener('click', resetCountdown);
 pauseStartCountdownBtn.addEventListener('click', pauseStartCountdown)
+
+window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CZP89Z491V');
