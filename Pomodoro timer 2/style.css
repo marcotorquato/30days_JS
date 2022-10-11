@@ -1,0 +1,196 @@
+body{
+  font-size: 14px;
+  background: #222;
+  color: #e7e7e7;
+  margin: 0;
+  margin: 0;
+}
+
+
+.title{
+  font-size: 2em;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+
+.range-space{
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+
+#svg-container {
+  position: relative;
+}
+
+.timeBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em;
+}
+
+#timer {
+  font-size: 3em;
+}
+
+button {
+  background: none;
+  border: none;
+  font-size: 2em;
+  color: #444;
+  cursor: pointer;
+}
+button:hover {
+  color: #e7e7e7;
+}
+
+/*---------------style the range bars-----------------------*/
+input[type=range] {
+  -webkit-appearance: none;
+}
+/*---------------------FIREFOX------------------------*/
+#workrange {
+  background: transparent;
+  border: none;
+  width: 350px;
+}
+#restrange {
+  background: transparent;
+  border: none;
+  width: 350px;
+}
+/*-----work range---------*/
+ #workrange::-moz-range-thumb {
+  background: #45b1a1;
+  border: none;
+  cursor: pointer;
+}
+#workrange::-moz-range-track {
+  height: 6px;
+  background: transparent;
+  border-bottom: 1px solid #45b1a1;
+}
+#workrange::-moz-range-progress {
+  height: 6px;
+  background: #45b1a1;
+}
+
+/*----------------------rest range------------------*/
+#restrange::-moz-range-thumb {
+  background: #df7e54;
+  border: none;
+  cursor: pointer;
+}
+#restrange::-moz-range-track {
+  height: 6px;
+  background: #222;
+  border-bottom: 1px solid #df7e54;
+}
+ #restrange::-moz-range-progress {
+   height: 6px;
+  background: #df7e54;
+}
+
+
+/*----------------IE(edge only)?--------------------*/
+/*----------workrange------*/
+#workrange::-ms-track {
+  background: transparent;
+  color: transparent;
+  border-bottom: 1px solid #45b1a1;
+  padding-top: 10px;
+}
+#workrange::-ms-fill-lower {
+  background: #45b1a1;
+}
+#workrange::-ms-thumb {
+  background: #45b1a1;
+  cursor: pointer;
+}
+/*----------restrange------*/
+#restrange::-ms-track {
+  background: transparent;
+  color: transparent;
+  border-bottom: 1px solid #df7e54;
+  padding-top: 10px;
+}
+#restrange::-ms-fill-lower {
+  background: #df7e54;
+}
+#restrange::-ms-thumb {
+  background: #df7e54;
+  cursor: pointer;
+}
+
+/*------------------svg animation----------------*/
+
+#workProgress, #restProgress {
+  stroke-dasharray: 570px;
+  stroke-dashoffset: 570px;
+}
+
+#workProgress.ani, #restProgress.ani {
+  animation-name: progressAnimation;
+  animation-timing-function: linear;
+  animation-direction: reverse;
+  animation-delay: 1s;
+}
+
+@keyframes progressAnimation {
+  from {
+    stroke-dashoffset: 570px;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media screen and (min-width: 525px) {
+  body {
+    font-size: 24px;
+  }
+}
+
+/*-----------------------CHROME-----------------------*/
+/*---------------------work range----------------------*/
+#workrange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: -10px;
+  height: 25px;
+  width: 25px;
+  background: #45b1a1;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#workrange::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  background: #45b1a1;
+}
+/*--------rest range---------------------------*/
+#restrange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: -10px;
+  height: 25px;
+  width: 25px;
+  background: #df7e54;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#restrange::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  background: #df7e54;
+}
