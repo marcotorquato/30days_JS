@@ -44,7 +44,7 @@ function resetVariables() {
 
 workLengthDisplay.innerHTML = 20;
 breakLengthDisplay.innerHTML = 5;
-countdownDisplay.innerHTML = "20:00";
+countdownDisplay.innerHTML = "25:00";
 
 function updateDisplay() {
   workLengthDisplay.innerHTML = sessionLength;
@@ -139,7 +139,7 @@ function changeSessions() {
 }
 
 function resetCountdown() {
-  sessionLength = 20;
+  sessionLength = 25;
   breakLength = 5;
   pauseStartCountdownBtn.textContent = "Pause";
   clearInterval(timeinterval);

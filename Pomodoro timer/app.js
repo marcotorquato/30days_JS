@@ -113,7 +113,7 @@ $(document).ready(function() {
       (initialSeconds - seconds) / initialSeconds * (2 * Math.PI)
     );
     ctx.lineTo(120, 120);
-    ctx.fillStyle = "#084963";
+    ctx.fillStyle = "#7a1ba7";
     ctx.fill();
   }
 
