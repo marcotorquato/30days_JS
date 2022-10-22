@@ -5,7 +5,6 @@
 body {
   min-width: 320px;
   color: white;
-  text-shadow: 1px 1px 10px rgb(189, 196, 255);
   background-image: linear-gradient(to right bottom, #7a1ba7, #36155c, #1f1448, #100f32, #03011d);    background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Quicksand', sans-serif;
@@ -16,11 +15,11 @@ body {
 
 #container {
   min-height: 100vh;
-  background: rgba(0, 0, 0, 0.89);
+  background: rgba(0, 0, 0, 0.253);
 }
 
 #title {
-  font-size: 4em;
+  font-size: 3.2em;
   line-height: 2em;
 }
 
@@ -43,11 +42,13 @@ body {
 
 #checks > .check {
   opacity: 0.25;
-  color: #7a1ba7;
+  color: #fff;
+  text-shadow: 1px 1px 10px rgb(189, 196, 255);
+
 }
 
 #phase {
-  font-size: 2em;
+  font-size: 1.3em;
 }
 
 /**/
@@ -56,6 +57,10 @@ body {
   width: 240px;
   height: 240px;
   position: relative;
+  background-image: radial-gradient(#111115eb 40%, #020115 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
 }
 
 #timer, #timer-canvas {
@@ -68,7 +73,6 @@ body {
 
 #timer {
   font-family: 'Roboto Mono', monospace;
-
   font-size: 4em;
   z-index: 1;
   line-height: 240px;
@@ -105,12 +109,19 @@ input[type=text] {
   padding: 0.5em;
 }
 
+#timer-controls > button:hover {
+  color: #fff;
+  text-shadow: 1px 1px 10px rgb(189, 196, 255);
+  cursor: grab;
+}
+
 footer{
   padding: 20px;
 }
 a {
   text-decoration: none;
   color: #fff;
+
 }
 
 @media screen and (max-width: 768px) {

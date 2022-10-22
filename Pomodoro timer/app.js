@@ -15,10 +15,10 @@ $(document).ready(function() {
     if (seconds <= 0) {
       phaseType = (phaseType + 1) % 2; // toggle between phase 0 and 1
       if (phaseType === 0) {
-        $("#phase").html("Phase: Work");
+        $("#phase").html("Work!");
         setTime(workLength);
       } else {
-        $("#phase").html("Phase: Break");
+        $("#phase").html("Break!");
         if (checks < 4) {
           //determine short or long break
           addCheck();
@@ -113,7 +113,7 @@ $(document).ready(function() {
       (initialSeconds - seconds) / initialSeconds * (2 * Math.PI)
     );
     ctx.lineTo(120, 120);
-    ctx.fillStyle = "#7a1ba7";
+    ctx.fillStyle = "#67168c";
     ctx.fill();
   }
 
