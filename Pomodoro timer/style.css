@@ -28,7 +28,7 @@ body {
   margin: 0 auto;
   text-align: center;
   line-height: 2em;
-  padding: 2em;
+  padding-top: 2em;
 }
 
 #options, #checks, #phase, #timer-container {
@@ -116,11 +116,12 @@ input[type=text] {
 }
 
 footer{
-  padding: 20px;
+  padding-top: 20px;
+  font-size: 0.9em;
 }
 a {
   text-decoration: none;
-  color: #fff;
+  color: #7a1ba7;
 
 }
 
