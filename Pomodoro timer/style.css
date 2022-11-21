@@ -139,3 +139,13 @@ a {
     margin-bottom: 2em;
   }
 }
+
+.meteo{
+  display: flex;
+  margin-top: 20px;
+}
+
+.music {
+  margin-top: -1px;
+  margin-left: 20px;
+}
