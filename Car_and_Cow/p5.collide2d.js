@@ -1,4 +1,8 @@
 
+
+
+
+
 p5.prototype._collideDebug = false;
 
 p5.prototype.collideDebug = function(debugMode){
@@ -32,11 +36,8 @@ p5.prototype.collideRectCircle = function (rx, ry, rw, rh, cx, cy, diameter) {
   var testY = cy;
 
   // which edge is closest?
-  if (cx < rx){   
-          testX = rx       // left edge
-  }
-  else if (cx > rx+rw){ 
-    testX = rx+rw  }   // right edge
+  if (cx < rx){         testX = rx       // left edge
+  }else if (cx > rx+rw){ testX = rx+rw  }   // right edge
 
   if (cy < ry){         testY = ry       // top edge
   }else if (cy > ry+rh){ testY = ry+rh }   // bottom edge
