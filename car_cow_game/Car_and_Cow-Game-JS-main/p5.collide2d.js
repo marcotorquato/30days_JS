@@ -1,13 +1,3 @@
-/*
-Repo: https://github.com/bmoren/p5.collide2D/
-Created by http://benmoren.com
-Some functions and code modified version from http://www.jeffreythompson.org/collision-detection
-Version v0.7.3 | June 22, 2020
-CC BY-NC-SA 4.0
-*/
-
-
-
 
 p5.prototype._collideDebug = false;
 
@@ -42,8 +32,11 @@ p5.prototype.collideRectCircle = function (rx, ry, rw, rh, cx, cy, diameter) {
   var testY = cy;
 
   // which edge is closest?
-  if (cx < rx){         testX = rx       // left edge
-  }else if (cx > rx+rw){ testX = rx+rw  }   // right edge
+  if (cx < rx){   
+          testX = rx       // left edge
+  }
+  else if (cx > rx+rw){ 
+    testX = rx+rw  }   // right edge
 
   if (cy < ry){         testY = ry       // top edge
   }else if (cy > ry+rh){ testY = ry+rh }   // bottom edge
