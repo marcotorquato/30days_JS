@@ -36,7 +36,7 @@ export function Games({ games }: GamesProps) {
       <Header>
         <div className="left">
           <p className="games-label">GAMES</p>
-          <h2>Jogos Exclusivos</h2>
+          <h2>Exclusive Games</h2>
         </div>
         <div className="right">
           <div className="platform">
@@ -71,7 +71,7 @@ export function Games({ games }: GamesProps) {
           </div>
           <a href="#">
             <Image src={Cubes} alt="" />
-            Ver todos jogos
+            See all games
           </a>
         </div>
       </Header>
@@ -146,7 +146,7 @@ export function Games({ games }: GamesProps) {
                   fill="#C4C4C4"
                 />
               </svg>
-              Ver todos jogos
+              See all games
             </a>
           </div>
         </CardSeeMore>
