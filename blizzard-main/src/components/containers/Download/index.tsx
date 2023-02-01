@@ -75,29 +75,29 @@ export function Download() {
       <div className="sub-container">
         <LeftSide>
           <Image src={Battlenet} alt="" />
-          <h2>Baixe agora o battle.net</h2>
+          <h2>Download battle.net</h2>
           <div className="infos">
             <div className="info">
               <Image src={Cards} alt="" />
-              <p>Seus jogos em um só lugar</p>
+              <p>Your games in one place</p>
             </div>
             <div className="info">
               <Image src={Dots} alt="" />
-              <p>Conecte-se aos seus amigos</p>
+              <p>Connect with your friends</p>
             </div>
             <div className="info">
               <Image src={Buy} alt="" />
-              <p>Compre jogos e itens digitais</p>
+              <p>Buy games and digital items</p>
             </div>
           </div>
           <Button leftIcon={getSo()}>
-            Baixar para {detectedOS}
+            Download to {detectedOS}
             {/*  {detectedOS === 'Windows' && <Image src={Windows} alt="Windows" />} */}
           </Button>
           <p className="mobile">
             <Image src={Mobile} alt="" />
             <span>
-              Também disponível como <a href="#">aplicativo móvel</a>
+            Also available as <a href="#">Mobile App</a>
             </span>
           </p>
         </LeftSide>
