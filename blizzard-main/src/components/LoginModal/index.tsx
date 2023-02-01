@@ -26,7 +26,7 @@ export function LoginModal() {
               withIcon: true,
             })}
           >
-            <Image src={UserIcon} alt="Criar conta" width={19} height={19} />
+            <Image src={UserIcon} alt="Create account" width={19} height={19} />
             Logar
           </button>
         </Dialog.Trigger>
@@ -38,13 +38,13 @@ export function LoginModal() {
               </header>
               <Form>
                 <InputWrapper>
-                  <input type="text" placeholder="E-mail ou telefone" />
-                  <input type="password" placeholder="Senha" />
+                  <input type="text" placeholder="E-mail or phone" />
+                  <input type="password" placeholder="Password" />
                 </InputWrapper>
-                <Button fullWidth>Conectar-se</Button>
+                <Button fullWidth>Sign in</Button>
               </Form>
               <ConnectionTypes>
-                <p className="connect-with">ou conecte-se com</p>
+                <p className="connect-with">or conect with</p>
                 <LoginTypes>
                   <IconButton>
                     <svg
@@ -102,12 +102,12 @@ export function LoginModal() {
                   </IconButton>
                 </LoginTypes>
                 <p>
-                  <a href="#">Crie uma conta</a> Battle.net de graça
+                  <a href="#">Create an account</a> Battle.net Free
                 </p>
-                <a href="#">Não consegue logar? </a>
+                <a href="#">Can't log in?</a>
               </ConnectionTypes>
               <Close>
-                <Image src={CloseIcon} alt="Fechar modal de login" />
+                <Image src={CloseIcon} alt="Close login modal" />
               </Close>
             </Content>
           </Overlay>
