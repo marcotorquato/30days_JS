@@ -46,9 +46,9 @@ export function Hero() {
       {
         id: 'diablo',
         background: diabloBg.src,
-        heading: 'Retorna à escuridão com o game Diablo IV',
-        text: 'O retorno de Lilith traz uma era de escuridão e sofrimento',
-        buttonText: 'Jogue agora',
+        heading: 'Return to the darkness with the game Diablo IV',
+        text: 'Liliths Return Brings an Age of Darkness and Suffering',
+        buttonText: 'Play Now',
         trailer: {
           gif: diabloGif,
           thumbnail: diabloThumb,
@@ -58,9 +58,9 @@ export function Hero() {
       {
         id: 'hearthstone',
         background: hearthstoneBg.src,
-        heading: 'Novo pacote de expansão de Hearthstone',
-        text: 'A Horda e a Aliança se encontraram no Vale Alterac para lutar',
-        buttonText: 'Reserve agora na pré-venda',
+        heading: 'New Hearthstone expansion pack',
+        text: 'The Horde and Alliance met in Alterac Valley to fight',
+        buttonText: 'Book now on pre-sale',
         trailer: {
           gif: hearthstoneGif,
           thumbnail: hearthstoneThumb,
@@ -70,9 +70,9 @@ export function Hero() {
       {
         id: 'wow',
         background: wowBg.src,
-        heading: 'Desbrave as Terras Sombrias em Shadowlands! ',
-        text: 'O que jaz além do mundo que você conhece?',
-        buttonText: 'Reserve na pré-venda',
+        heading: 'Brave the Shadowlands in Shadowlands! ',
+        text: 'What lies beyond the world you know?',
+        buttonText: 'Book on pre-sale',
         trailer: {
           gif: wowGif,
           thumbnail: wowThumb,
