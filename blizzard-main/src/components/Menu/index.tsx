@@ -114,7 +114,7 @@ export function Menu({ show, selectedMenu }: MenuProps) {
         image: <Image src={hearthstoneMasters} alt="" />,
       },
       {
-        name: 'Campeonato Mundial de Arena WoW®',
+        name: 'World Cup Arena WoW®',
         href: '#',
         image: <Image src={wowChampionship} alt="" />,
       },
@@ -124,12 +124,12 @@ export function Menu({ show, selectedMenu }: MenuProps) {
         image: <Image src={starcraftWcs} alt="" />,
       },
       {
-        name: 'Copa Mundial de Overwatch®',
+        name: 'World Cup Overwatch®',
         href: '#',
         image: <Image src={overwatchWorld} alt="" />,
       },
       {
-        name: 'Liga de Overwatch®',
+        name: 'Overwatch®',
         href: '#',
         image: <Image src={overwatchLeague} alt="" />,
       },
@@ -170,22 +170,22 @@ export function Menu({ show, selectedMenu }: MenuProps) {
           {selectedMenu === 'games' && (
             <>
               <Link href={'#'}>
-                <Image src={cubes} alt="" /> Ver todos jogos
+                <Image src={cubes} alt="" /> See all games
               </Link>
               <Link href={'#'}>
-                <Image src={iconLogo} alt="" /> Aplicativo Battle.net
+                <Image src={iconLogo} alt="" /> App Battle.net
               </Link>
               <Link href={'#'}>
                 <Image src={iconDownload} alt="" /> Downloads
               </Link>
               <Link href={'#'}>
-                <Image src={iconChat} alt="" /> Fóruns dos jogos
+                <Image src={iconChat} alt="" /> Forum
               </Link>
             </>
           )}
           {selectedMenu === 'sport' && (
             <Link href={'#'}>
-              <Image src={trophy} alt="" /> Torneios da comunidade
+              <Image src={trophy} alt="" /> Community tournaments
             </Link>
           )}
         </Styled.Footer>
